@@ -191,9 +191,9 @@ p {
 
 section.features {
         display: grid;
-        grid-auto-columns: 33%;
-        grid-template-areas: "a a a";
+        grid-template: auto / repeat(3, 1fr);
         grid-gap: 90px 30px;
+        margin: 0 auto;
         padding: 120px 170px;
 }
 
@@ -213,8 +213,8 @@ section.features {
 .designs {
         display: grid;
         grid-gap: 2px;
-        grid-auto-columns: 25%;
-        grid-template-areas: "a a a a";
+        grid-template: auto / repeat(4, 1fr);
+        padding: 0 2px;
 }
 
 .designs > .work {
@@ -293,10 +293,10 @@ a.link + a.link {
 }
 
 section.personal_cards {
-        padding: 9.5em 0;
         display: flex;
         justify-content: center;
         gap: 3.5em;
+        padding: 120px 170px;
 }
 
 .personal_cards > .card {
@@ -344,9 +344,8 @@ section.personal_cards {
     justify-content:center;
     color: white;
     background:#5C3249;
-    padding: 0em 20em 0em 15em;
+    padding: 116px 170px 116px 129px;
 }
-
 .carousel > .slide > .description > .quote {
     font-size: 2em;
     font-style: italic;
@@ -444,8 +443,7 @@ section.personal_cards {
     align-items: stretch;
     text-align: center;
     background-color: #353C65;
-    height: 341px;
-    padding: 71px 170px;
+    padding: 70px 170px;
 }
 .item {
     width: calc(100% / 3);
@@ -482,14 +480,54 @@ section.personal_cards {
 }
 
 .copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     background: #2C3154;
     color: #808080;
-    text-align: center;
-    height: 90px;
-    margin: 0 0;
-    padding:1px 570px;
-
+    white-space: nowrap;
 }
 span{
     color:#FFFFFF;
 }
+ /* media query */
+ @media screen  and (max-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+    section.features {
+        padding: 80px 20px;
+    } 
+
+    .personal_cards > .card > img {
+        width: 227px;
+        height: 227px;
+        object-fit: cover;
+    }
+    section.personal_cards {
+        padding: 80px 20px;
+    }
+
+
+    .carousel > .slide > .description {
+        padding: 47px 104px 110px 88px;
+    }
+    .footer_link{
+        padding: 50px 20px;
+    }
+    .social>.link {
+        margin: 23px;
+    }
+    .copyright{
+        padding: 15px 355px;
+    }
+}
+ 
+ @media screen and (max-width: 320px) {
+    .center aligned menu {
+        display: none;
+        background-image: url(images/icon_menu.png);
+    }
+ }
+    
+ 
