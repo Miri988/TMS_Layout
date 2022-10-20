@@ -237,7 +237,8 @@ section.features {
 .designs > .work img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
 }
 
 .designs > .work .hover {
@@ -306,7 +307,8 @@ section.personal_cards {
 .personal_cards > .card > img {
         width: 270px;
         height: 270px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
 }
 
 /*slider*/
@@ -335,7 +337,8 @@ section.personal_cards {
 .carousel > .slide > .image > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .carousel > .slide > .description {
@@ -491,7 +494,10 @@ span{
     color:#FFFFFF;
 }
  /* media query */
- @media screen  and (max-width: 1024px) {
+ 
+ /*tablet*/
+
+  @media screen  and (max-width: 1024px) {
     header {
         padding: 20px;
     }
@@ -502,7 +508,8 @@ span{
     .personal_cards > .card > img {
         width: 227px;
         height: 227px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     section.personal_cards {
         padding: 80px 20px;
@@ -522,12 +529,30 @@ span{
         padding: 15px 355px;
     }
 }
- 
+ /*mobile*/
+
  @media screen and (max-width: 320px) {
     .center aligned menu {
         display: none;
         background-image: url(images/icon_menu.png);
     }
+    section.features {
+        display: grid;
+        grid-template: auto / repeat(1, 1fr);
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    .designs {
+        display: grid;
+        grid-template: auto / repeat(2, 1fr);
+        grid-gap: 1px;
+        padding: 0 2px;
+    }
+    section.personal_cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
  }
     
  
