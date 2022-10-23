@@ -193,7 +193,6 @@ section.features {
         display: grid;
         grid-template: auto / repeat(3, 1fr);
         grid-gap: 90px 30px;
-        margin: 0 auto;
         padding: 120px 170px;
 }
 
@@ -271,8 +270,12 @@ section.features {
 .designs > .work:active .hover {
         background: rgba(185, 12, 12, 0.8);
 }
+.topic {
+    margin: 41px 0 21px 0;
+}
+/* our team*/
 
-.card .link {
+.cards .link {
         position: relative;
         width: 0;
         height: 0;
@@ -281,7 +284,7 @@ section.features {
         border: 1px solid #c6cbcd;
 }
 
-.card .link > img {
+.cards .link > img {
         position: absolute;
         height: 50%;
         left: 50%;
@@ -296,19 +299,29 @@ a.link + a.link {
 section.personal_cards {
         display: flex;
         justify-content: center;
-        gap: 3.5em;
-        padding: 120px 170px;
+        gap: 30px;
+        padding: 114px 170px;
 }
 
-.personal_cards > .card {
+.personal_cards > .cards {
         width: 270px;
 }
 
-.personal_cards > .card > img {
+.personal_cards > .cards > img {
         width: 270px;
         height: 270px;
         -o-object-fit: cover;
            object-fit: cover;
+        margin-bottom: 30px;
+}
+.representation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6C7279;
+    margin-top: 18px;
+    margin-bottom: 38px;
 }
 
 /*slider*/
@@ -415,70 +428,55 @@ section.personal_cards {
 
 */
 
+.carousel {
+    padding-bottom: 60px;
+}
 .carousel-indicators [data-bs-target] {
     border: 1px solid #7E5D6F !important;
     width: 14px !important;
     height: 14px !important;
     border-radius: 50% !important;
-    background: white !important;
     transition: all .3s ease !important;
     bottom: 50px !important;
+    margin-right: 25px;
 }
 .carousel-indicators .active {
-    background: #7E5D6F !important;
+    background: #7E5D6F;
 }
 .carousel-item {
-    display: flex !important;
-    position: relative !important;
-    width: 100% !important;
-    height: 100% !important;
-    flex-shrink: 0 !important;
-    transition: margin-left .4s ease !important;
+    background: #5C3249;
+    padding: 0;
+}
+.quote {
+    font-size: 3em;
+    font-style: italic;
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    line-height: 49px;
+    text-transform: capitalize;
+    color: white;
 }
 
-
-.carousel-item > div {
-    width: 50% !important;
-}
-.carousel > .carousel-inner > .carousel-item > img {
-    width: 100% !important;
-    height: 100% !important;
-    -o-object-fit: cover !important;
-       object-fit: cover !important;
-}
-.carousel > .carousel-item > .carousel-caption {
-    display: flex !important;
-    flex-flow: column !important;
-    justify-content:center !important;
-    color: white !important;
-    background:#5C3249 !important;
-    padding: 116px 170px 116px 129px !important;
-}
-.carousel > .carousel-item > .carousel-caption > .quote {
-    font-size: 2em !important;
-    font-style: italic !important;
-    font-family: 'Cardo', serif !important;
-    font-weight: 400 !important;
-    line-height: 49px !important;
-    text-transform: capitalize !important;
+ .author {
+    font-size: 1.08em;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 15px;
+    margin-top: .5em;
+    color: white;
 }
 
-.carousel > .carousel-item > .carousel-caption > .author {
-    font-size: 1em !important;
-    font-style: italic !important;
-    text-transform: uppercase !important;
-    font-weight: 700 !important;
-    line-height: 15px !important;
-    margin-top: .5em !important;
+.d-none {
+    padding: 116px 170px 116px 129px;
 }
-
 
 /* download section */
 
 .download {
     max-width: 1510px;
     height: 470px;
-    margin: 0 auto;
+    margin-bottom: 10px;
     padding: 10rem 0;
     text-align: center;
 }
@@ -490,12 +488,15 @@ section.personal_cards {
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
+    margin-bottom: 5px;
 }
 .download h3+h5 {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 50px;
+    margin-top: 5px;
 }
 
 
