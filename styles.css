@@ -308,8 +308,7 @@ section.personal_cards {
 }
 
 .personal_cards > .cards > img {
-        width: 270px;
-        height: 270px;
+        width: 100%;
         -o-object-fit: cover;
            object-fit: cover;
         margin-bottom: 30px;
@@ -566,16 +565,34 @@ span{
         padding: 80px 20px;
     } 
 
-    .personal_cards > .card > img {
-        width: 227px;
-        height: 227px;
-        -o-object-fit: cover;
-           object-fit: cover;
+    .cards h4 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .cards h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .cards .representation {
+        font-size: 14px;
+        line-height: 16px;
     }
     section.personal_cards {
+        gap: 25px;
         padding: 80px 20px;
     }
 
+    .d-none {
+        padding: 47px 104px 110px 88px;
+    }
+    .quote {
+        font-size: 2em;
+        line-height: 32.5px;
+    }
+    .author {
+        font-size: 1em;
+        line-height: 14.09px;
+    }
 
     .carousel > .slide > .description {
         padding: 47px 104px 110px 88px;
@@ -589,6 +606,7 @@ span{
     .copyright{
         padding: 15px 355px;
     }
+   
 }
  /*mobile*/
 
