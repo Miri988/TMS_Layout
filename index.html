@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="fonts" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+  <link rel="icon" type="image/ico" sizes="16x16" href="favicon.ico">
   <title>Layout</title>
 </head>
 <body>
@@ -45,11 +45,26 @@
         </li>
       </ul>
     </nav>
-    <section class="banner center aligned">
-        <h1 class="uppercase">Your Favorite One Page Multi Purpose Template</h1>
-        <h4 class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</h4>
-        <button class="uppercase button">Find Out More</button>
-    </section>
+    <input type="checkbox" id="m-toggle" hidden />
+    <label class="menu-toggle" for="m-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </label>
+    <div class="wrapper">
+      <ul class="mobile-menu">
+        <li class="uppercase">Features</li>
+        <li class="uppercase">Works</li>
+        <li class="uppercase">Our team</li>
+        <li class="uppercase">Testimonials</li>
+        <li class="uppercase">Download</li>
+      </ul>
+      <section class="banner center aligned">
+          <h1 class="uppercase">Your Favorite One Page Multi Purpose Template</h1>
+          <h4 class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</h4>
+          <button class="uppercase button">Find Out More</button>
+      </section>
+    </div>
   </header>
   <main>
     <!--The first section with images of features-->
@@ -280,69 +295,6 @@
         </div>
       </div>
     </div>
-    <!-- <section id="Testimonials">
-      <div class="carousel">
-        <input id="slide_1" type="radio" name="carousel" hidden checked />
-        <input id="slide_2" type="radio" name="carousel" hidden />
-        <input id="slide_3" type="radio" name="carousel" hidden />
-        <input id="slide_4" type="radio" name="carousel" hidden />
-        <input id="slide_5" type="radio" name="carousel" hidden />
-        <div class="slide">
-            <div class="image">
-                <img src="images/bg_testimonials.jpg" alt="image_1" />
-            </div>
-            <div class="description">
-                <h2 class="quote">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</h2>
-                <h6 class="author">Susan Sims, Interaction Designer at XYZ</h6>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="image">
-                <img src="images/bg_testimonials.jpg" alt="image_2" />
-            </div>
-            <div class="description">
-              <h2 class="quote">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</h2>
-              <h6 class="author">Susan Sims, Interaction Designer at XYZ</h6>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="image">
-                <img src="images/bg_testimonials.jpg" alt="image_3" />
-            </div>
-            <div class="description">
-              <h2 class="quote">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</h2>
-              <h6 class="author">Susan Sims, Interaction Designer at XYZ</h6>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="image">
-                <img src="images/bg_testimonials.jpg" alt="image_4" />
-            </div>
-            <div class="description">
-              <h2 class="quote">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</h2>
-              <h6 class="author">Susan Sims, Interaction Designer at XYZ</h6>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="image">
-                <img src="images/bg_testimonials.jpg" alt="image_5" />
-            </div>
-            <div class="description">
-              <h2 class="quote">"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."</h2>
-              <h6 class="author">Susan Sims, Interaction Designer at XYZ</h6>
-            </div>
-        </div>
-        <div class="dots">
-            <label for="slide_1"></label>
-            <label for="slide_2"></label>
-            <label for="slide_3"></label>
-            <label for="slide_4"></label>
-            <label for="slide_5"></label>
-        </div>
-    </div>
-    </section>
-  -->
-
     <!--The 5-th section with download-->
     <section id="Download" class="download">
       <h3 class="capitalize">
