@@ -147,6 +147,10 @@ ul.menu > li > a {
 
 ul.menu > li h6 {
     margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 ul.menu > li:hover {
@@ -205,165 +209,180 @@ ul.menu > li:active {
     /* main */
     
 [class*="center aligned"] {
-        text-align: center;
-        justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .uppercase {
-        text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .red {
-        color: #ff4343;
+    color: #ff4343;
 }
 
 section.features {
-        display: grid;
-        grid-template: auto / repeat(3, 1fr);
-        grid-gap: 90px 30px;
-        padding: 120px 170px;
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    grid-gap: 90px 30px;
+    padding: 120px 170px;
 }
 
 .feature {
-        text-align: center;
+    text-align: center;
 }
-.topic {
-        text-transform: uppercase;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 28px;
-        margin: 40px 0 20px;
+.feature .topic {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 40px 0 20px;
+}
+.feature .representation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color:#6C7279;
 }
 
 .feature > img {
-        width: 100px;
-        height: 100px;
+    width: 100px;
+    height: 100px;
 }
 /* work*/
 
 .designs {
-        display: grid;
-        grid-gap: 2px;
-        grid-template: auto / repeat(4, 1fr);
-        padding: 0 2px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template: auto / repeat(4, 1fr);
+    padding: 0 2px;
 }
 
 .designs > .work {
-        display: block;
-        position: relative;
+    display: block;
+    position: relative;
 }
 
 .designs .work::after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 .designs > .work > .content {
-        position: absolute;
-        height: 100%;
-        width: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .designs > .work img {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-           object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+        object-fit: cover;
 }
 
 .designs > .work .hover {
-        display: none;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 67, 67, 0.8);
-        color: white;
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 67, 67, 0.8);
+    color: white;
 }
 
 .designs > .work .hover > h4 {
-        margin-top: 0;
-        margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;  
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 .designs > .work .hover > p {
-        margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
 }
 
 .designs > .work:hover .hover {
-        display: flex;
+    display: flex;
 }
 
 .designs > .work:active .hover {
-        background: rgba(185, 12, 12, 0.8);
+    background: rgba(185, 12, 12, 0.8);
 }
 
 /* our team*/
-.cards h4 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        margin-bottom: 5px;
+.cards .topic {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 5px;
 }
-.cards h5 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        margin-bottom: 18px;
+.cards .red {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 18px;
 }
 .cards .link {
-        position: relative;
-        width: 0;
-        height: 0;
-        display: inline-block;
-        padding: 18px;
-        border: 1px solid #c6cbcd;
+    position: relative;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    padding: 18px;
+    border: 1px solid #c6cbcd;
 }
 
 .cards .link > img {
-        position: absolute;
-        height: 50%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    position: absolute;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 a.link + a.link {
-        margin-left: 6px;
+    margin-left: 6px;
 }
 
 section.personal_cards {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 114px 170px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 114px 170px;
 }
 
 .personal_cards > .cards {
-        width: 270px;
+    width: 270px;
 }
 
 .personal_cards > .cards > img {
-        width: 100%;
-        -o-object-fit: cover;
-           object-fit: cover;
-        margin-bottom: 30px;
+    width: 100%;
+    -o-object-fit: cover;
+        object-fit: cover;
+    margin-bottom: 30px;
 }
-.representation {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        color: #6C7279;
-        margin-bottom: 38px;
+.cards .representation {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6C7279;
+    margin-bottom: 38px;
 }
 
 /*slider*/
@@ -390,7 +409,7 @@ section.personal_cards {
     padding: 0;
 }
 .quote {
-    font-size: 3em;
+    font-size: 36px;
     font-style: italic;
     font-family: 'Cardo', serif;
     font-weight: 400;
@@ -400,12 +419,11 @@ section.personal_cards {
 }
 
  .author {
-    font-size: 1.08em;
+    font-size: 13px;
     font-style: normal;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 15px;
-    margin-top: .5em;
     color: white;
 }
 
@@ -494,6 +512,10 @@ section.personal_cards {
     padding: 24px 553px;
 }
 h5.capitalize {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     margin: 0;
 }
 
@@ -508,17 +530,36 @@ span{
     header {
         padding: 20px;
     }
+    .banner > h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .banner > h4 {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 0 52px;
+    }
     section.features {
         padding: 80px 20px;
     } 
-
-    .cards h4 {
+    .feature .topic {
         font-size: 18px;
         line-height: 21px;
     }
-    .cards h5 {
+    .feature .representation {
         font-size: 14px;
         line-height: 16px;
+    }
+    .cards .topic {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .cards .red {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .cards .link {
+        padding: 10px;
     }
     .cards .representation {
         font-size: 14px;
@@ -533,49 +574,105 @@ span{
         padding: 47px 104px 110px 88px;
     }
     .quote {
-        font-size: 2em;
-        line-height: 32.5px;
+        font-size: 24px;
+        line-height: 32px;
     }
     .author {
-        font-size: 1em;
-        line-height: 14.09px;
+        font-size: 12px;
+        line-height: 14px;
     }
 
     .carousel > .slide > .description {
         padding: 47px 104px 110px 88px;
     }
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+    }
+
+    .download {
+        padding: 78px 20px;
+    }
+
+    .footer_link h5+h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .footer_link h5 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 18px;
+    }
     .footer_link{
+        gap:20px;
         padding: 50px 20px;
     }
     .social>.link {
-        margin: 23px;
+        width: 33px;
+        height: 33px;
+        margin: 14px 23px 0;
+    }
+    .social>.link+.link {
+        margin-left: 0;
     }
     .copyright{
         padding: 15px 355px;
     }
+    .copyright>h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
    
 }
+@media screen and (max-width: 840px) {
+    .menu-toggle {
+        display: block;
+    }
+    header > nav > ul.menu {
+        display: none;
+    }
+
+    header span.title {
+        font-size: 15px;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    #m-toggle:checked ~ .wrapper > section {
+        opacity: 0;
+        padding: 70px 0 50px 0;
+    }
+
+}
+
+
  /*mobile*/
 
  @media screen and (max-width: 320px) {
     .banner > h1 {
-        font-weight: 900;
         font-size: 36px;
         line-height: 42px;
+        margin-bottom: 33px;
     }
-
-    .regular {
-        font-weight: 400;
+    .banner > h4 {
         font-size: 14px;
         line-height: 16px;
+        padding: 0;
+        margin-bottom: 50px;
     }
+    .banner {
+        padding: 70px 0 52px;
+    }
+
     .uppercase.button {
         font-weight: 900;
         font-size: 24px;
         line-height: 28px;
     }
     .button {
-        padding: 25px 30px;
+        padding: 15px 44px;
         font-size: 18px;
         line-height: 21px;
     }
@@ -615,15 +712,36 @@ span{
         grid-gap: 1px;
         padding: 0 2px;
     }
+    .designs > .work .hover > h4 {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 5px;
+    }
+
+    .designs > .work .hover > p {
+        font-size: 14px;
+        line-height: 16px;
+    }
     section.personal_cards {
         display: flex;
         flex-direction: column;
+        padding: 35px 20px;
     }
     
-
+    .carousel-indicators [data-bs-target] {
+        margin-right: 20px;
+    }
+    .d-none {
+        display: block !important;
+        padding: 0 25px 95px 20px;;
+    }
+    .col-6 {
+        width: 100%;
+    }
     .quote {
         font-size: 24px;
         line-height: 32px;
+        text-align: center;
     }
     .author {
         font-size: 12px;
@@ -631,12 +749,14 @@ span{
     }
 
     .download {
-        padding: 20px 20px 45px;
+        padding: 34px 20px 45px;
     }
         
     .download h3 {
         font-size: 18px;
         line-height: 21px;
+        margin-bottom: 5px;
+        padding: 10px 0;
     }
     .download h3+h5 {
         font-size: 13px;
@@ -644,12 +764,17 @@ span{
         margin-bottom: 14px;
         margin-top: 3px;
     }
+    .download .button {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 28px 60px;
+    }
 
     .footer_link {
         flex-direction: column;
         padding: 33px 20px;
         gap: 60px;
-    }
+    } 
     .copyright{
         padding: 30px 20px;
     }
