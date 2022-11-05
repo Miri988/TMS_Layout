@@ -37,7 +37,7 @@ button {
 }
 
 header {
-    padding: 0 14.1em;
+    padding: 0 11.5%;
     background: linear-gradient(rgba(37, 43, 73, .8), rgba(37, 43, 73, .8)), url('images/background.jpg');
     background-size: cover;
     color: #ffffff;
@@ -54,6 +54,9 @@ nav > span.title {
     font-weight: 700;
     font-size: 2em;
     opacity: .4;
+}
+.box {
+    font-weight: 400;
 }
 
 .menu-toggle {
@@ -141,16 +144,16 @@ ul.menu > li {
 
 ul.menu > li > a {
     display: inline-block;
-    min-width: 11.2em;
-    padding: 3em 1em;
+    min-width: 134px;
+    padding: 36px 12px;
 }
 
 ul.menu > li h6 {
     margin: 0;
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 15px;
 }
 
 ul.menu > li:hover {
@@ -225,7 +228,7 @@ section.features {
     display: grid;
     grid-template: auto / repeat(3, 1fr);
     grid-gap: 90px 30px;
-    padding: 120px 170px;
+    padding: 8% 11.5%;
 }
 
 .feature {
@@ -363,7 +366,7 @@ section.personal_cards {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 114px 170px;
+    padding: 7.5% 11.5%;
 }
 
 .personal_cards > .cards {
@@ -395,8 +398,8 @@ section.personal_cards {
     height: 14px;
     border-radius: 50%;
     transition: all .3s ease;
-    margin-right: 25px;
-    margin-left: 0;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .carousel-indicators {
     margin: 0;
@@ -428,14 +431,14 @@ section.personal_cards {
 }
 
 .d-none {
-    padding: 116px 170px 116px 129px;
+    padding: 3% 7% 3% 6%;
 }
 
 /* download section */
 
 .download {
     margin-bottom: 10px;
-    padding: 114px 170px;
+    padding: 7.5% 11.5%;
     text-align: center;
 }
 .capitalize{
@@ -464,7 +467,7 @@ section.personal_cards {
     text-align: center;
     gap: 30px;
     background-color: #353C65;
-    padding: 70px 170px;
+    padding: 4.8% 11.5%;
 }
 .item {
     flex: 1 1 0;
@@ -509,7 +512,7 @@ section.personal_cards {
     background: #2C3154;
     color: #808080;
     white-space: nowrap;
-    padding: 24px 553px;
+    padding: 1.6% 36%;
 }
 h5.capitalize {
     font-style: normal;
@@ -519,16 +522,17 @@ h5.capitalize {
     margin: 0;
 }
 
-span{
+.copyright span {
     color:#FFFFFF;
 }
  /* media query */
  
  /*tablet*/
 
-  @media screen  and (max-width: 1024px) {
-    header {
-        padding: 20px;
+    @media screen  and (max-width: 1024px) {
+    
+        header {
+        padding: 2%;
     }
     .banner > h1 {
         font-size: 48px;
@@ -540,7 +544,7 @@ span{
         padding: 0 52px;
     }
     section.features {
-        padding: 80px 20px;
+        padding: 8% 2%;
     } 
     .feature .topic {
         font-size: 18px;
@@ -567,11 +571,11 @@ span{
     }
     section.personal_cards {
         gap: 25px;
-        padding: 80px 20px;
+        padding: 7% 2%;
     }
 
     .d-none {
-        padding: 47px 104px 110px 88px;
+        padding: 3% 7% 3% 6%;
     }
     .quote {
         font-size: 24px;
@@ -582,12 +586,11 @@ span{
         line-height: 14px;
     }
 
-    .carousel > .slide > .description {
-        padding: 47px 104px 110px 88px;
-    }
     .carousel-indicators [data-bs-target] {
         width: 10px;
         height: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 
     .download {
@@ -610,13 +613,12 @@ span{
     .social>.link {
         width: 33px;
         height: 33px;
-        margin: 14px 23px 0;
     }
     .social>.link+.link {
         margin-left: 0;
     }
     .copyright{
-        padding: 15px 355px;
+        padding: 1.5% 35%;
     }
     .copyright>h5 {
         font-size: 14px;
@@ -628,12 +630,15 @@ span{
     .menu-toggle {
         display: block;
     }
+    header > nav {
+        border-bottom: none;
+    }
     header > nav > ul.menu {
         display: none;
     }
 
     header span.title {
-        font-size: 15px;
+        font-size: 24px;
     }
     
     .mobile-menu {
@@ -645,14 +650,64 @@ span{
         padding: 70px 0 50px 0;
     }
 
+    section.features {
+        display: grid;
+        grid-template: auto / repeat(2, 1fr);
+        padding: 8% 11.5%;
+    }
+
+    section.personal_cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .carousel-indicators [data-bs-target] {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .d-none {
+        display: block !important;
+        padding: 3% 7% 10% 6%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .quote {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .author {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
 }
 
+@media screen and (max-width: 576px) {
+    section.features {
+        display: grid;
+        grid-template: auto / repeat(1, 1fr);
+        padding: 8% 11.5%;
+    }
+    .designs {
+        display: grid;
+        grid-gap: 2px;
+        grid-template: auto / repeat(2, 1fr);
+        padding: 0 2px;
+    }
+    .social>.link {
+        margin: 20px 5px 0;
+    }
+}
 
  /*mobile*/
 
  @media screen and (max-width: 320px) {
     .banner > h1 {
-        font-size: 36px;
+        font-size: 33px;
         line-height: 42px;
         margin-bottom: 33px;
     }
@@ -672,7 +727,7 @@ span{
         line-height: 28px;
     }
     .button {
-        padding: 15px 44px;
+        padding: 15px 35px;
         font-size: 18px;
         line-height: 21px;
     }
@@ -688,7 +743,7 @@ span{
     }
 
     header span.title {
-        font-size: 15px;
+        margin: 7px;
     }
     
     .mobile-menu {
@@ -729,7 +784,8 @@ span{
     }
     
     .carousel-indicators [data-bs-target] {
-        margin-right: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .d-none {
         display: block !important;
@@ -739,13 +795,16 @@ span{
         width: 100%;
     }
     .quote {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 32px;
         text-align: center;
+        margin: 30px 0;
     }
     .author {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 14px;
+        margin-bottom: 0;
+        text-align: start;
     }
 
     .download {
@@ -767,7 +826,7 @@ span{
     .download .button {
         font-size: 18px;
         line-height: 21px;
-        padding: 28px 60px;
+        padding: 28px 40px;
     }
 
     .footer_link {
@@ -782,6 +841,7 @@ span{
         font-size: 12px;
         line-height: 16px;
    }
+   
  }
     
  
