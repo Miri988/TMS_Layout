@@ -164,7 +164,13 @@ ul.menu > li:active {
     color: #e71414;
     border-color: #e71414;
 }
-
+a:hover {
+    color: #FFFFFF;
+}
+a:active {
+    color: #E71414;
+    border-color: #E71414;
+}
 .banner {
     max-width: 1510px;
     margin: 0 auto;
@@ -685,8 +691,21 @@ h5.capitalize {
     }
     
 }
+@media screen and (max-width: 752px) {
+    
+    .designs > .work .hover > h4 {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 5px;
+    }
 
-@media screen and (max-width: 576px) {
+    .designs > .work .hover > p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 587px) {
     section.features {
         display: grid;
         grid-template: auto / repeat(1, 1fr);
@@ -706,6 +725,16 @@ h5.capitalize {
  /*mobile*/
 
  @media screen and (max-width: 320px) {
+
+    a:focus {
+        color: #FFFFFF;
+        border-color: #babbc5;
+    }
+    .button:focus {
+        background: #e71441;
+        cursor: pointer;
+    }
+
     .banner > h1 {
         font-size: 33px;
         line-height: 42px;
@@ -754,6 +783,16 @@ h5.capitalize {
         opacity: 0;
         padding: 70px 0 50px 0;
     }
+    ul.mobile-menu > li {
+        display: table;
+        border-bottom: 4px solid transparent;
+    }
+    ul.mobile-menu > li:focus {
+        border-color: #babbc5;
+    }
+    ul.mobile-menu > li:active {
+        border-color: #E71414;
+    }
 
     section.features {
         display: grid;
@@ -767,15 +806,8 @@ h5.capitalize {
         grid-gap: 1px;
         padding: 0 2px;
     }
-    .designs > .work .hover > h4 {
-        font-size: 18px;
-        line-height: 21px;
-        margin-bottom: 5px;
-    }
-
-    .designs > .work .hover > p {
-        font-size: 14px;
-        line-height: 16px;
+    .designs > .work:focus .hover {
+        display: flex;
     }
     section.personal_cards {
         display: flex;
